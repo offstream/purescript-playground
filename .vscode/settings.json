@@ -1,0 +1,13 @@
+{
+    "[purescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nwolverson.ide-purescript"
+    },
+    "purescript.fastRebuild": true,
+    "purescript.buildOpenedFiles": true,
+    "purescript.censorWarnings": [
+        "MissingTypeDeclaration",
+        "UnusedFFIImplementations"
+    ],
+    "purescript.formatter": "none"
+}
