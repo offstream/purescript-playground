@@ -1,0 +1,17 @@
+{
+	"name": "purescript-playground",
+	"type": "module",
+	"private": "true",
+	"scripts": {
+		"start": "node index.js",
+		"test": "spago test",
+		"build": "spago build",
+		"dev": "spago -q build --then 'node index.js'",
+		"dev:watch": "clear && spago -q build -w -l --then 'node index.js'",
+		"repl": "spago repl"
+	},
+	"devDependencies": {
+		"spago": "^0.20.9",
+		"purescript": "^0.15.4"
+	}
+}
