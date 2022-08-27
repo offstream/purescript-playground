@@ -1,31 +1,5 @@
 module Record.Format where
 
--- stolen from:
---- https://pursuit.purescript.org/packages/purescript-record-format/2.0.0
---- couldn't bother to use bower, (it's ONE FILE)
---- also this was using the deprecated `SProxy` so I changed that to `Proxy`
-
--- | Usage
---   * via inline symbol dclaration
---   ```
---   format
---     (Proxy :: Proxy "Hi {name}! Your favourite number is {number}")
---     {name : "Bill", number : 16}
---   ```
---   * or declare the template beforehand
---   ```
---   template :: Proxy "Hi {name}! Your favourite number is {number}"
---   template = Proxy
---
---   format template { name: "Bill", number : 16 }
---   ```
---
--- | Notes
---   * Missing field/s result in a type-error
---   * The only requirement is that all the types in the record have
---     `Show` instances
-
-
 import Prelude (identity, (<>), class Show, show)
 import Prim.Row as Row
 import Prim.Symbol as Symbol
